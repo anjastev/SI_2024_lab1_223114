@@ -1,0 +1,88 @@
+4.
+mkdir SI_2024_lab1_223114
+cd SI_2024_lab1_223114
+5.
+echo "# SI_2024_lab1_223114" >> README.md //додавање README.md
+git init
+git add . //ажурирање на README.md
+6.
+git commit -m "Initial commit"
+git remote add origin https://github.com/anjastev/SI_2024_lab1_223114.git
+git push -u origin master
+7.
+git add SILab1_1.java SILab1_2.java SILab1Main.java
+git commit -m "Add starter code"
+8.
+git push origin master //за да ги прикачиме јава фајловите 
+9.
+git branch 
+git checkout -b bug1
+git checkout master
+git checkout -b bug2
+gut push origin master
+10.
+git checkout bug1
+11.
+прво ја поправам грешката во кодот рачно па 
+git add SILab1_1.java
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+12.
+git checkout bug2
+13.
+прво ја поправам грешката во кодот рачно па 
+git add SILab1_2.java
+git commit -m "Fix wrong condition in makeBigStringFrom"
+14.
+git branch 
+git checkout bug1
+15.
+git add SILab1Main.java
+git commit -m "Call method filterOddLengthStrings in main class"
+16.
+git checkout bug2
+17.
+git add SILab1Main.java
+git commit -m "Call method makeBigStringFrom in main class"
+git push origin bug 1 bug2
+18.
+git checkout master
+git push origin master
+19.
+git checkout master
+20.
+git merge bug1
+со bug1 немаше конфликти но кај bug2 =>This branch has conflicts that must be resolved
+Use the web editor or the  to resolve conflicts.
+21.
+git push origin master
+22.
+git checkout bug2
+23.
+git rebase master 
+trebase da se izbrise <<<<< HEAD ====>>>>> od SILab1Main.java 
+git add SILab1Main.java
+git rebase --continue
+24.
+git checkout master
+25.
+git merge bug2 
+git push -f origin bug2
+26 i 27
+git push origin master 
+git push origin bug1 bug2
+28.
+git reflog > logs.txt
+git add logs.txt 223114.txt
+git commit -m "Final commit"
+29.
+git push origin master 
+
+
+
+
+
+
+
+
+
+	
